@@ -15,7 +15,8 @@ Este é um repositório criado para ser um modelo de arquitetura para uma aplica
 ## Diretrizes gerais da arquitetura proposta
  
 Esta é uma aplicação web fictícia criada para servir de exemplo para as boas práticas aqui apresentadas. Com alguma adaptação, as diretrizes aqui apresentadas se aplicam a qualquer aplicação web que siga o formato MVC. A arquitetura apresentada aqui se baseia no modelo ou estilo de arquitetura conhecida em alguns meios como "arquitetura de microsserviços". A inspiração tem o intuito de projetar a aplicação web através de componentes independentemente substituíveis ou atualizáveis. 
-Para fins de simplicidade, esses componentes serão criados todos na mesma aplicação, o que os diferencia da definição de microsserviço. Mas eles devem possuir caracteríscas que torne fácil sua futura extração para uma aplicação externa, que sirva como um microsserviço. Essas características são as seguintes: 
+
+Para fins de simplicidade, esses componentes serão criados todos na mesma aplicação, o que os diferencia da definição formal de microsserviço. Mas eles devem possuir caracteríscas que torne fácil sua futura extração para uma aplicação externa, que sirva como um microsserviço. Essas características são as seguintes: 
 
 - Baixo acoplamento: Os microsserviços que compõe a aplicação devem ser uma interface de comunicação entre si o mais simples possível. O ideal é que qualquer um desses serviços possa ser extraído isoladamente para ser executado em uma aplicação independente.
-- Alta coesão: Cada microsser
+- Alta coesão: Cada microsserviço deve possuir um conjunto de responsabilidades bem definido (e idealmente não muito extenso).
